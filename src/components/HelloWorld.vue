@@ -1,7 +1,7 @@
 <template>
   <h1>{{ msg }}</h1>
   <button @click="count++">count is: {{ count }}</button>
-  <p :class="$style.testModule">Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
+  <p class="testModule">Edit000 <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
 </template>
 
 <script>
@@ -18,8 +18,9 @@ export default {
 }
 </script>
 
-<style module>
+<style lang="scss">
+/* use scss */
 .testModule{
-  color:red;
+  color:pink;
 }
 </style>
