@@ -17,6 +17,17 @@ export default defineComponent({
     setTimeout(() => {
       state.value.push({ id: 1, name: "全栈架构师" });
     }, 1000);
+
+    fetch("/api/users")
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        console.log(data);
+      })
+      .catch(function(e) {
+        console.log("Oops, error" + e);
+      });
   },
 });
 </script>
